@@ -41,3 +41,51 @@ body{
     background-color: #f2f2f2;
     padding-top: 70px;
 }
+
+.video{
+  padding-top: 13px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 425px;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 455px;
+}
+
+.thumbnail{
+    border-color: transparent
+}
+
+h2{
+    padding-top: 15px;
+    color:#4d79ff;
+}
+
+.thumbnail img{
+    width:310px;
+    height: 200px;
+}
+
+.footer ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.footer ul{
+   text-align: center; 
+}
+
+.footer{
+    text-align: center;
+    font-weight: bold;
+}

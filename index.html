@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Navbar tutorial from BootstrapBay.com">
-    <meta name="author" content="BootstrapBay.com">
-    <title>Fixed NavBar Example for Bootstrap</title>
+    <meta name="description" content="Cloud 9 JS">
+    <meta name="author" content="Jafar Salami">
+    <title>Cloud 9 By Jafar Salami</title>
+    <link rel="shortcut icon" href="http://csgo-forecast.com/data/chache/content/55/ldpi/Cloud9-q9XLicGSEHSJ-icon.webp"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/9e87e5dce5.js"></script>
     <link href="css/style.css" rel="stylesheet"/>
   </head>
   <body>
@@ -31,18 +33,130 @@
             <li><a href="#">TEAMS</a></li>
             <li><a href="#">STREAMS</a></li>
             <li><a href="#">PARTNERS</a></li>
+            <li><a href="#">FAQ's</a></li>
             <li><a href="#">CONTACT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
+    
     <div class="container">
-        <h1>Stuff </h1>
+      <div class="bs-example">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/c9banner1.jpg" alt="First Slide">
+                </div>
+                <div class="item">
+                    <img src="img/c9banner2.jpg" alt="Second Slide">
+                </div>
+                <div class="item">
+                    <img src="img/c9banner3.jpg" alt="Third Slide">
+                </div>
+                <div class="item">
+                    <img src="img/c9banner4.jpg" alt="Fourth Slide">
+                </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+      </div>
     </div>
+    
+    <div class="container">
+      <h2>Featured Video</h2>
+      <div class="video-container">
+          <!---YouTube Video----->
+          <iframe id="player" src="https://www.youtube.com/embed/XOofdfg30vg?rel=0&autoplay=1" frameborder="0" allowfullscreen volume="0" width="50px" height="355px"></iframe>
+      </div>
+      <h2>Videos</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <center><iframe width="310px" height="200px" src="https://www.youtube.com/embed/hhuh3fZQjGw" frameborder="0" allowfullscreen></iframe></center>
+            <div class="caption">
+              <h3>Frame Of Mike | Shroud Official Fragmovie</h3>
+              <p>Cloud9 and Calle Danielsson are proud to present the organizations first full length player frag movie. The first of the player movie being released is centered around Michael "Shroud" Grzesiek.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <center><iframe width="310px" height="200px" src="https://www.youtube.com/embed/6fBH-bb3JKI" frameborder="0" allowfullscreen></iframe></center>
+            <div class="caption">
+              <h3>Cloud9 League of Legends Montage 7</h3>
+              <p>SpooksOP brings us another Cloud9 montage of the squad's coolest plays.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <center><iframe width="310px" height="200px" src="https://www.youtube.com/embed/wipOqgyxI6o" frameborder="0" allowfullscreen></iframe></center>
+            <div class="caption">
+              <h3>Cloud9 LoL | Genesis Ep.1 - New Beginnings</h3>
+              <p>Episode One of Cloud9's newest series "Genesis"! This episode took place during pre-season and IEM Cologne 2015.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>News</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <center><img src="img/news1.jpg" alt="rush & bunny"></img></center>
+            <div class="caption">
+              <h3>Rush and BunnyFuFuu to sign with Cloud9 LoL</h3>
+              <p>Following Meteos’ voluntary departure from the jungle slot during the 2015 summer split, C9 brought in retired mid laner Hai to fill the role. But now, with the benefit of time on their hands, they’ve been able to figure out exactly what they need to compete at the highest level in the North American LCS - and perhaps, the world.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <center><img src="img/news2.jpg" alt="play like c9"></img></center>
+            <div class="caption">
+              <h3>Cloud9 Peripheral & Monitor Sponsors Update</h3>
+              <p>With the 2016 eSport season in full swing, we wanted to provide everyone with quick update about our partners. First, we are excited to announce that we are continuing our relationship with Logitech and their G Series line of products.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <center><img src="img/news3.jpg"></img></center>
+            <div class="caption">
+              <h3>Cloud9 Partners With Mobile App, Instant eSports</h3>
+              <p>We at Cloud9 are excited to officially partner with Instant eSports, a free mobile app for Android and iOS. Starting today, you can access our latest announcements and performance results by downloading and browsing through the news aggregation app, which will have this information sooner than any other source.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="footer">
+        <ul>
+          <li><a href="http://twitch.tv/team/cloud9"><i class="fa fa-twitch fa-3x" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/Cloud9"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com/cloud9"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com/user/C9ggTV"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/cloud9-esports"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a></li>
+        </ul>
+        <p>Created By <a href="http://josalami.pythonanywhere.com/">Jafar Salami</a></p>
+      </div>
+    </div>
+    
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
