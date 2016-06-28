@@ -39,7 +39,7 @@
 
 body{
     background-color: #f2f2f2;
-    padding-top: 70px;
+    padding-top: 60px;
 }
 
 .video{
@@ -88,4 +88,21 @@ h2{
 .footer{
     text-align: center;
     font-weight: bold;
+}
+
+#tabs .ui-tabs-nav { 
+    height: 2.7em; 
+    text-align: center; 
+} 
+#tabs .ui-tabs-nav li { 
+    display: inline-block; 
+    float: none; 
+    top: 0px; 
+    margin: 0em; 
+    padding-bottom: 0px; 
+}
+
+#tabs{
+    margin-top: 20px;
+    margin-bottom:  20px;
 }
