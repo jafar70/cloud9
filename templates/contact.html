@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  {% if success %}
+    <p>Thank you for your message. We'll get back to you shortly.</p>
+  
+  {% else %} 
+    <div class="container" style="background-color: transparent;">
+      <div class="col-md-12" style="text-align:center;padding-bottom:20px;">
+        <h2>Contact</h2>
+        <p style="font-size:20px;">Please fill in the form below or give us a call to start WrightStart.</p>
+      </div>
+    </div>
+    
+    {% for message in form.name.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    {% for message in form.email.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    {% for message in form.subject.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    {% for message in form.message.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    <form action="{{ url_for('contact') }}" method=post>
+      {{ form.hidden_tag() }}
+      
+      <div class="col-md-4">
+        {{ form.name.label }}
+        {{ form.name }}
+        
+        {{ form.email.label }}
+        {{ form.email }}
+        
+        {{ form.subject.label }}
+        {{ form.subject }}
+      </div>
+      <div class="col-md-4">
+        {{ form.message.label }}
+        {{ form.message }}
+      </div>
+      
+      <div class="col-md-4">
+        <br><br>
+        {{ form.submit }}
+      </div>
+    </form>
+    
+    <div class="container" style="background-color: transparent;">
+      <div class="col-md-12" style="text-align:center;padding-bottom:30px;">
+        <h2>Store Related Inquiries</h2>
+        <p>Please email us at <a href="mailto:store@cloud9.gg">store@cloud9.gg</a>. Include your order number if applicable.</p>
+      </div>
+      
+    </div>
+    
+    <div class="container">
+      <div class="footer">
+        <ul>
+          <li><a href="http://twitch.tv/team/cloud9"><i class="fa fa-twitch fa-3x" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/Cloud9"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com/cloud9"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com/user/C9ggTV"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/cloud9-esports"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a></li>
+        </ul>
+        <p>Created By <a href="http://josalami.pythonanywhere.com/">Jafar Salami</a></p>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  {% endif %}
+{% endblock %} 

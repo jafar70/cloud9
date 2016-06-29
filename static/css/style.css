@@ -1,0 +1,191 @@
+.navbar-default{
+    min-height: 80px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.navbar-header{
+    height: 80px;
+    padding-top: 8px;
+}
+
+.navbar-toggle{
+    margin-top:10px
+}
+
+.navbar-default .navbar-nav > li > a{
+    margin-top: 12px;
+    color:#4d79ff;
+    font-weight: bold;
+    padding-right: 25px;
+    
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+    color: black;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+    background-color: transparent;
+    color:black;
+}
+
+.container{
+    background-color: white;
+}
+
+body{
+    background-color: #f2f2f2;
+    padding-top: 60px;
+}
+
+.video{
+  padding-top: 13px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 425px;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 455px;
+}
+
+.thumbnail{
+    border-color: transparent
+}
+
+h2{
+    padding-top: 15px;
+    color:#4d79ff;
+}
+
+.thumbnail img{
+    width:310px;
+    height: 200px;
+}
+
+.footer ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.footer ul{
+   text-align: center; 
+}
+
+.footer{
+    text-align: center;
+    font-weight: bold;
+}
+
+#tabs .ui-tabs-nav { 
+    height: 2.7em; 
+    text-align: center; 
+} 
+#tabs .ui-tabs-nav li { 
+    display: inline-block; 
+    float: none; 
+    top: 0px; 
+    margin: 0em; 
+    padding-bottom: 0px; 
+}
+
+#tabs{
+    margin-top: 20px;
+    margin-bottom:  20px;
+}
+
+#accordion{
+    padding-bottom: 20px;
+}
+
+/* Contact form */
+form label {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+}
+
+form input#name,
+form input#email,
+form input#subject {
+  width: 300px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;  
+     -moz-border-radius: 3px;  
+          border-radius: 3px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+form textarea#message {
+  width: 300px;
+  height: 200px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;  
+     -moz-border-radius: 3px;  
+          border-radius: 3px;
+  border: 1px solid #cccccc;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+form input#submit {
+  display: block;
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  border:1px solid #d8d8d8;
+  padding: 10px; 
+  font-weight:bold; 
+  text-align: center; 
+  color: #000000; 
+  background-color: #f4f4f4;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: linear-gradient(top, #f4f4f4, #e5e5e5);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f4f4, endColorstr=#e5e5e5);
+}
+
+form input#submit:hover{
+  cursor: pointer;
+  border:1px solid #c1c1c1; 
+  background-color: #dbdbdb;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dbdbdb), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -moz-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -ms-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -o-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: linear-gradient(top, #dbdbdb, #cccccc);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#dbdbdb, endColorstr=#cccccc);
+}
+
+/* Message flashing */
+.flash {
+  background-color: #FBB0B0;
+  padding: 10px;
+  width: 400px;
+}
+
+.contactinfo{
+  text-align: center;
+  background-color: #ecf0f1;
+  color: black;
+  padding: 50px;
+}
